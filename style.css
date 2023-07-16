@@ -7,8 +7,11 @@ body {
 
     font-family: 'Work Sans', sans-serif;
 }
-header{
+
+header {
     background: rgba(255, 144, 14, 0.10);
+
+
 }
 
 nav {
@@ -21,7 +24,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color:  #424242;
+    color: #424242;
 }
 
 nav li {
@@ -32,11 +35,11 @@ nav li {
     display: flex;
     margin-right: 100px;
     gap: 20px;
-    color:  #424242;
+    color: #424242;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
-   }
+}
 
 .nav-head {
     color: #131313;
@@ -45,4 +48,129 @@ nav li {
     /* padding-top:20px ; */
     margin-left: 100px;
     font-weight: 700;
+}
+
+.banner {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.banner-head {
+    color: #131313;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.banner-pera {
+    color: #727272;
+    text-align: center;
+    font-size: .5rem;
+    font-weight: 400;
+    /* width: fit-content; */
+    padding: 30px;
+}
+
+.btn-primary {
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    font-size: .6rem;
+    border-radius: 4px;
+    background: #FF900E;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.banner-pic img {
+    width: 70%;
+    margin-left: 170px;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    padding:65px 100px;
+}
+
+.team-pic {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: auto;
+}
+.team-head{
+    margin-bottom: 10px;
+}
+
+.quick {
+    color: #727272;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+font-size: 2rem;
+font-weight: 700;
+}
+.team-pera{
+    color:  #727272;
+font-size: 1rem;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+    nav,
+    .team-container
+     {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+
+    }
+
+    .banner-pic img {
+        width: 67%;
+        margin-left: 100px;
+    }
+    .team-pic{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav ,.team-container {
+        flex-direction: column;
+    }
+    .team-pic{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
 }
