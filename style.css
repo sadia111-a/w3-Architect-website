@@ -208,17 +208,29 @@ nav li {
    padding-bottom: 50px;
    width: 50%;
    margin: auto;
-
-
 }
+.sponsor-logo{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 40px;
+    }
+    .sponsor-logo img{
+        width: 200px;
+        /* padding: 30px; */
+    }
 
 /* responsive styles */
 @media screen and (max-width:576px) {
 
     nav,
     .badge,
-    .team-container {
+    .team-container,
+    .sponsor-logo {
         flex-direction: column;
+    }
+    .sponsor-logo{
+        padding: 30px;
     }
 
     header {
@@ -243,7 +255,8 @@ nav li {
 
     nav,
     .badge,
-    .team-container {
+    .team-container,
+    .sponsor-logo {
         flex-direction: column;
     }
 
