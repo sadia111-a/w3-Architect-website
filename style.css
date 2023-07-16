@@ -100,7 +100,7 @@ nav li {
     align-items: center;
     gap: 40px;
     margin-top: 50px;
-    padding:65px 100px;
+    padding: 65px 100px;
 }
 
 .team-pic {
@@ -109,7 +109,8 @@ nav li {
     gap: 10px;
     margin-left: auto;
 }
-.team-head{
+
+.team-head {
     margin-bottom: 10px;
 }
 
@@ -124,25 +125,73 @@ nav li {
     font-size: 2rem;
     font-weight: 700;
 }
-.features{
+
+.features {
     color: #FF900E;
-font-size: 2rem;
-font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
 }
-.team-pera{
+
+.team-pera {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* some fact part starts here*/
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+}
+
+.badge-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    width: 120px;
+    height: 120px;
+}
+
+.badge-num {
+    color: #424242;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pera {
+    color: #727272;
+    font-size: .7rem;
+    font-weight: 600;
+}
+.some-fact-description{
+
+    padding-left: 120px;
+}
+
+.some-fact-head {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.some-fact-pera{
+    width: 450px;
     color:  #727272;
 font-size: 1rem;
 font-weight: 400;
-margin-bottom: 20px;
+margin-bottom: 50px;
 }
-
-
 
 /* responsive styles */
 @media screen and (max-width:576px) {
-    nav,
-    .team-container
-     {
+
+    nav,.badge,
+    .team-container {
         flex-direction: column;
     }
 
@@ -155,21 +204,25 @@ margin-bottom: 20px;
         width: 67%;
         margin-left: 100px;
     }
-    .team-pic{
+
+    .team-pic {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
 
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav ,.team-container {
+
+    nav, .badge,
+    .team-container {
         flex-direction: column;
     }
-    .team-pic{
+
+    .team-pic {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
