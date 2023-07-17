@@ -212,10 +212,11 @@ nav li {
 .sponsor-logo{
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 50px;
     margin-bottom: 40px;
     }
     .sponsor-logo img{
+        /* gap: 20px; */
         width: 200px;
         /* padding: 30px; */
     }
@@ -263,6 +264,10 @@ nav li {
     .team-pic {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .sponsor-logo{
+        align-items: center;
     }
 
 
